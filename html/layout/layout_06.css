@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.warp div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: 100px;
+    background-color: #D9D9D9;
+}
+
+.contents {
+    background-color: #F0F0F0;
+    width: 1040px;
+    height: 624px;
+    margin: 0 auto;
+}
+
+.footer {
+    height: 100px;
+    background-color: #D9D9D9;
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.warp {
+    display: flex;
+}
+
+.aside {
+    text-align: center;
+}
+
+.logo {
+    width: 400px;
+    height: 100px;
+    background-color: #D9D9D9;
+    line-height: 100px;
+}
+
+.gnb {
+    width: 400px;
+    height: 924px;
+    background-color: #E6E6E6;
+    line-height: 624px;
+}
+
+.footer {
+    width: 400px;
+    height: 300px;
+    background-color: #D9D9D9;
+    line-height: 300px;
+}
+
+.contents {
+    width: 1040px;
+    height: 1024px;
+    background-color: #F0F0F0;
+    text-align: center;
+    line-height: 1024px;
+}

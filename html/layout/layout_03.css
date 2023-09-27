@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.wrap {
+    text-align: center;
+}
+
+.header {
+    background-color: #D9D9D9;
+    height: 100px;
+    line-height: 100px;
+}
+
+.contents {
+    display: flex;
+    line-height: 624px;
+}
+
+.contents .menu {
+    background-color: #E6E6E6;
+    width: 400px;
+    height: 624px;
+}
+
+.contents .main {
+    background-color: #F0F0F0;
+    height: 624px;
+    flex: 1;
+}
+
+.footer {
+    background-color: #D9D9D9;
+    height: 624px;
+    line-height: 300px;
+}
