@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #222;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* .header */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+
+
+.gnb {
+    display: flex;
+}
+
+.gnb li ul {
+ display: none;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gnb > li > a {
+    color: orangered;
+}
+
+/* contents */
+.gallery_list {
+    display: none;
+}
+
+.contents{
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    gap: 24px;
+}
+.contents > div {
+    flex: 1;
+}
+
+.board {}
+
+.board .titles {
+    display: flex;
+    gap: 4px;
+    background-color: #ff6347;
+    border-bottom: 3px solid #ff6347;
+    cursor: pointer;
+}
+
+.board .titles h2 {
+    flex: 1;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.board .titles h2:last-child {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.board .notice_list {
+    padding: 10px;
+}
+
+.board .notice_list a{
+    display: block;
+    padding: 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+}
+
+.link {
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.link li a {
+    display: block;
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 85px;
+}
+
+.link li a {
+    background-color: #c2c2c2;
+}
+
+.footer {
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 40px;
+}
