@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,8 +14,8 @@ a {
 }
 
 img {
-    display: block;
     width: 100%;
+    display: block;
 }
 
 body {
@@ -29,7 +29,8 @@ body {
     margin: 0 auto;
 }
 
-/* .header */
+
+/* .header  */
 .header {
     height: 100px;
     display: flex;
@@ -38,80 +39,104 @@ body {
     border-bottom: 1px solid #002866;
 }
 
+.gnb ul {
+    display: none;
+}
+
+.gallery_list {
+    display: none;
+}
+
+
+/* .gnb  */
 .gnb {
     display: flex;
 }
 
-.gnb li ul {
- display: none;
-}
-
 .gnb > li > a {
     display: block;
-    padding: 0 40px;
-    height: 100px;
-    line-height: 100px;
+    padding: 0 60px;
 }
 
 .gnb > li > a:hover {
     color: orangered;
 }
 
-/* contents */
-.gallery_list {
-    display: none;
+
+
+/* .slider */
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
 }
 
+.slides {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img {
+    width: 1200px;
+}
+
+
+/* .contents */
 .contents{
-    height: 200px;
-    padding: 10px 0;
     display: flex;
     gap: 24px;
-    margin: 10px 0;
-}
-.contents > div {
-    flex: 1;
+    padding: 10px 0;    
 }
 
-.board {}
+.contents > div {
+    flex: 1;
+    /* width: 384px; */
+}
 
 .board .titles {
     display: flex;
     gap: 4px;
-    background-color: #ff6347;
     border-bottom: 3px solid #ff6347;
     cursor: pointer;
 }
 
 .board .titles h2 {
-    flex: 1;
-    height: 48px;
+    height: 51px;
+    line-height: 51px;
+    background-color: #ff6347;
+    width: 190px;
     text-align: center;
-    line-height: 48px;
     color: #fff;
     font-size: 14px;
     font-weight: normal;
 }
+
+.notice_list {
+    padding: 10px 6px;
+}
+
+.notice_list li a {
+    display: block;
+    padding: 4px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 364px;
+}
+
+.notice_list li a:hover {
+    text-decoration: underline;
+}
+
 
 .board .titles h2:last-child {
     background-color: #f0f0f0;
     color: #222;
 }
 
-.board .notice_list {
-    padding: 10px;
-}
-
-.board .notice_list a{
-    display: block;
-    padding: 4px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 360px;
-}
-
-.link {
+.link ul {
     display: flex;
     gap: 10px 16px;
     flex-wrap: wrap;
@@ -121,63 +146,53 @@ body {
     display: block;
     width: 184px;
     height: 85px;
+    line-height: 85px;
+    text-align: center;
     background-color: #d9d9d9;
     border-radius: 8px;
-    text-align: center;
-    line-height: 85px;
 }
 
-.link li a:hover {
-    background-color: #c2c2c2;
-}
 
+/* .footer */
 .footer {
-    height: 100px;
-    background-color: #eee;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 60px;
+    background-color: #eeeeee;
+    height: 100px;
 }
 
-.footer .sns {
-    display: flex;
-    gap: 40px;
-}
 
 /* .popup */
 .popup {
-    width: 600px;
-    height: 400px;
-    padding: 40px;
+    width: 500px;
+    height: 360px;
+    padding: 10px;
+    border: 1px solid #eee;
     background-color: #fff;
-    border: 1px solid #ddd;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
 }
 
-.popup h2 {
-    font-size: 26px;
-}
 .popup p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 10px;
     line-height: 1.6;
 }
 
-.popup .close_btn {
-    display: block;
+.popup button {
     width: 60px;
     height: 36px;
     line-height: 36px;
     text-align: center;
-    background-color: #666;
-    color: #fff;
+    background-color: #eee;
+    border-radius: 8px;
     position: absolute;
-    bottom: 40px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
 }
+
+
 

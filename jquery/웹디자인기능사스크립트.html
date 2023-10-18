@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 스크립트</title>
+    <script src="./basic/script/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./basic/css/main.css">
+</head>
+<body>
+    <button class="show_modal">팝업모달</button>
+    <div class="modal">
+        <h2>이것은 모달입니다.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dolorem iure, quam quisquam ea explicabo, ullam deleniti rem perspiciatis eligendi rerum omnis tenetur minus! Suscipit adipisci veritatis reiciendis natus ut?</p>
+        <button class="close_modal">닫기</button>
+    </div>
+
+    <section>
+        <button class="btn">버튼</button>
+        <button class="btn2">버튼2</button>
+        <button class="btn3">토글 버튼3</button>
+        <div class="box">안녕</div>
+    </section>
+
+
+    <hr>
+
+    <ul div class="gnb">
+        <li>
+            <a href="#">과일</a>
+            <ul class="sub">
+                <li><a href="#">사과</a></li>
+                <li><a href="#">수박</a></li>
+                <li><a href="#">복숭아</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">음료</a>
+            <ul class="sub">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">물</a></li>
+                <li><a href="#">콜라</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./basic/images/Frame 1.jpg" alt=""></div>
+            <div class="slide"><img src="./basic/images/Frame 2.jpg" alt=""></div>
+            <div class="slide"><img src="./basic/images/side_01.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="contents">
+        <div class="tab">
+            <div class="titles">
+                <h2>공지사항</h2>
+                <h2>갤러리</h2>
+            </div>
+            <div class="items">
+                <div class="item">공지사항 내용.....</div>
+                <div class="item">갤러리 내용.....</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.titles h2').click(function(){
+            $('.titles h2').removeData('active')
+            $(this).addClass('active')
+        })
+    </script>
+
+    <script>
+        // $('.slides').css('.left', '-100%')
+     
+        setInterval(function (){
+            $('.slides').animate({left:'-100%'}, function(){
+                $('.slide').first().appendTo('.slides')
+                $('.slides').css('left', 0)
+            })
+        }, 3000)
+
+        
+    </script>
+
+
+    <script>
+        // $('.gnb').mouseenter(function(){
+        //     console.loge('안녕')
+        // })
+        // $('.gnb').mouseenter(function(){
+        //     console.loge('hello....)')
+        // })
+
+        $('.gnb').hover(
+            function() {
+                $('.sub').stop().slideDown()
+            },
+            function() {
+                $('.sub').hide()
+            }
+        )
+
+
+    </script>
+
+
+    <script>
+        //모달
+        $('.show_modal').click(
+            function(){
+                $('.modal').show()
+            }
+        )
+        $('.close_modal').click(
+            function(){
+                $('.modal').hide()
+            }
+        )
+        // .click뒤에는 함수가 나옴
+        // 함수는 그냥 해야하는 일 이라고 생각하면 됨
+        // function(){} 이게 함수 형식이라고 생각하면 됨 중괄호 안에 적혀있는것이 해야하는일이라고 생각하면 됨 
+        // console.log('show_modal~~~')이말은 클릭하면 쇼모달이라고 나오게 해줘라는 의미 이것을 짧게 적으면 $('.modal').show()//
+        // $('.modal').hide()은 모달을 클릭하면 사라지게 해달라는 의미
+
+        
+    </script>
+
+    <script>
+        $('.btn').click(
+            function(){
+            $('.box').addClass('active')                
+            }
+        )
+        // 엑티브를 보여줘
+
+        $('.btn2').click(
+            function(){
+            $('.box').removeClass('active')                
+            }
+        )
+        // 엑티브를 빼줘
+
+        $('.btn3').click(
+            function(){
+            $('.box').toggleClass('active')                
+            }
+
+            // 박스안에 토글이 있으면 빼고 없으면 나와줘 넣었다 뺏다하는것
+        )
+    </script>
+</body>
+</html>
