@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 빛축체</title>
+    <script src="./c-1-1/script/jquery-1.12.3.js"></script>
+    <link rel="stylesheet" href="./c-1-1/css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+            <img src="./c-1-1/images/logo.png" alt="로고1">
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">이용안내</a>
+                    <ul>
+                        <li><a href="#">이용방법</a></li>
+                        <li><a href="#">이용시간</a></li>
+                        <li><a href="#">이용요금</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이벤트정보</a>
+                    <ul>
+                        <li><a href="#">현장이벤트</a></li>
+                        <li><a href="#">온라인이벤트</a></li>
+                        <li><a href="#">이벤트예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프로그램</a>
+                    <ul>
+                        <li><a href="#">프로그램안내</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                        <li><a href="#">단체예약상담</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="slider">
+                <div class="slide"><img src="./c-1-1/images/img1.jpg" alt="슬라이드1"></div>
+                <div class="slide"><img src="./c-1-1/images/img2.jpg" alt="슬라이드2"></div>
+                <div class="slide"><img src="./c-1-1/images/img3.jpg" alt="슬라이드3"></div>
+            </div>
+            <div class="contents"></div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    <script>
+        $('.gnb > li').hover (
+            function(){
+                $(this).find('ul').stop().slideDown()
+            },
+            function(){
+            $(this).find('ul').stop().slideUp()
+            }
+        )
+
+        
+    </script>
+</body>
+</html>

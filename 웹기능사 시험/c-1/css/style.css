@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+}
+
+
+/* .header */
+.header {
+    width: 20%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/* .gnb */
+.gnb > ul > li > a {
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+/* a 링크를 블럭으로 잡으면 with가 필요없다.
+display: block;
+그리고 블럭으로 잡게 되면 밑으로 내려오게 된다. */
+
+
+.gnb > ul > li > a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.gnb > ul ul {
+    display: none;
+}
+
+/* 이렇게 잡을 때는 밑에를 꺽세 넣어주고 그 밑에는 꺽새를 
+넣지 않고 저렇게 넣어주면 된다. */
+
+/* 처음 이 부분을 작업할 때는 가리고 하다가 
+이 부분을 할때는 작업을 해주고 나중에는 
+다시 가려서 자바스크립트나 아니면 
+제이쿼리로 작업을 해 준다.  */
+
+.gnb > ul ul a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.gnb > ul ul a:hover{
+    background-color: #ddd;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img {
+    height: 350px;
+}
+
+.tab {
+    display: flex;
+    gap: 4px;
+    padding: 10px 0;
+}
+
+.tab > div {
+    flex: 1;
+}
+
+
+
+.text {
+    display: flex;
+    gap: 4px; 
+    border-bottom: 3px solid  rgb(233, 129, 31);
+}
+
+.title {
+
+}
+
+.text h3 {
+    background-color: rgb(233, 129, 31);
+    height: 30px;
+    width: 131px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.notice_list {
+    padding: 10px;    
+}
+
+.notice_list li a {
+    display: flex;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+
+.gallery_list {
+    display: none;
+}
+
+.title, .banner img, .link img  {
+    width: 264px;
+    height: 200px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(233, 129, 31);
+}
+
+.f_logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.Copyright p {
+    margin-top: 80px;
+    /* margin-left: 100px; */
+}
+
+.modal {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #333;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.modal p {
+    padding: 10px;
+    line-height: 1.6;
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* 슬라이드 부분에 한 자리로 올려면 이미지가 포지션 앱숄루트로 하고 
+부모를 릴레이티브로 잡아 준다  */
+
+콘솔에 적어넣는 이유는 잘 들어왔는지 확인을 하기 위해 찍는거다 
+
+eq에 적으면 순서를 보여줄 수 있게 한다 
+맨 초기 시작 
+css로 자리를 잘 잡아놓고 
+fadeout 명령어는 서서히 안보이게 하는것
+보이게 하는것 fadein 명령어
+유동적으로 보여지게 할려면 변수로 저거를 잡아내야함
+
+var current(현재)
+
+var current = 0 
+0으로 잡아 놓고 eq에 0이 들어가는 자리에  current를 넣는다.
+블록 안에 적는게 기본 원칙
+next
+
+
+
+

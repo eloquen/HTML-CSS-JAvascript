@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 빛축제</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="./script/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.png" alt="로고">
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">이용안내</a>
+                    <ul>
+                        <li><a href="#">이용방법</a></li>
+                        <li><a href="#">이용시간</a></li>
+                        <li><a href="#">이용요금</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이벤트정보</a>
+                    <ul>
+                        <li><a href="#">현장이벤트</a></li>
+                        <li><a href="#">온라인이벤트</a></li>
+                        <li><a href="#">이벤트예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프로그램</a>
+                    <ul>
+                        <li><a href="#">프로그램안내</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                        <li><a href="#">단체예약상담</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="slider">
+                <div class="slide"><img src="./images/img1.jpg" alt="슬라이드 이미지1"></div>
+                <div class="slide"><img src="./images/img2.jpg" alt="슬라이드 이미지2"></div>
+                <div class="slide"><img src="./images/img3.jpg" alt="슬라이드 이미지3"></div>
+            </div>
+
+            <div class="contents">
+                <div class="tap">
+                    <div class="title">
+                        <h3>공지사항</h3>
+                        <h3 class="active">갤러리</h3>
+                    </div>
+                    <ul class="item notice_list">
+                        <li><a href="#">해변에서 펼쳐지는 노래공연	2020.11.09</a></li>
+                        <li><a href="#">바다의 야경과 빛공연 관람하기	2020.11.09</a></li>
+                        <li><a href="#">불꽃놀이 이벤트를 신청하세요	2020.11.09</a></li>
+                        <li><a href="#">빛축제 단체관람 안내		2020.11.09</a></li>
+                    </ul>
+                    <ul class="item gallery_list">
+                        <li><a href="#"><img src="./images/icon1.jpg" alt="갤러리1"></a></li>
+                        <li><a href="#"><img src="./images/icon2.jpg" alt="갤러리2"></a></li>
+                        <li><a href="#"><img src="./images/icon3.jpg" alt="갤러리3"></a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+                    <img src="./images/banner.jpg" alt="배너1">
+                </div>
+                <div class="link">
+                    <a href="#"><img src="./images/direct.jpg" alt="바로가기"></a>
+                </div>
+            </div>
+
+            <div class="footer"></div>
+       </div>
+    </div>
+
+    <script>
+           $('.item').eq(0).show()
+
+            $('.title h3').click(function(){            
+            var idx =  $(this).index()
+            
+            $('.title h3').removeClass('active')
+            $(this).addClass('active')
+                     이벤트가 일어난것이 this
+})
+    </script>
+</body>
+</html>
