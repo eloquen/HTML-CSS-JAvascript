@@ -92,13 +92,37 @@ body {
     width: 264px;
 }
 
-.banner img .link img {
+.banner img, .link img {
     display: block;
     width: 264px;
     height: 200px;
+    object-fit: cover;
 }
 
-.title {
+
+.notice_list {
+    padding: 10px;
+}
+
+.notice_list li {
+    padding: 4px 0;
+    font-size: 12px;
+}
+
+.gallery_list {
+    display: none;
+    display: block;
+}
+.gallery_list li {
+    display: inline-block;
+    padding: 2px;
+}
+
+.gallery_list img {
+    width: 80px;
+}
+
+    .title {
     display: flex;
     gap: 4px;
     border-bottom: 3px solid #333333;
@@ -112,11 +136,63 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.title h3.active {
+    background-color: #F6B62C;
+    color: #333333;
+}
+
+.item {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+    background-color: #F6B62C;
+}
+
+.footer img {
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    
 }
 
 
+.modal {
+    background-color: #fff;
+    border: 1px solid #333333;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.modal h3 {
+    text-align: center;
+}
 
+.modal p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.modal button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 6px 10px;
+}
 
 
 

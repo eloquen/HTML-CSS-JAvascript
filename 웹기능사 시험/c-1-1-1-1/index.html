@@ -67,22 +67,23 @@
             <div class="contents">
                 <div class="side">
                     <div class="title">
-                        <h3>공지사항</h3>
+                        <h3 class="active">공지사항</h3>
                         <h3>갤러리</h3>    
                     </div>
-    
-                    <ul class="notice_list">
+                    <div class="items">
+                    <ul class="item notice_list">
                        <li><a href="#">해변에서 펼쳐지는 노래공연	2020.11.09</a></li> 
                        <li><a href="#">바다의 야경과 빛공연 관람하기	2020.11.09</a></li> 
                        <li><a href="#">불꽃놀이 이벤트를 신청하세요	2020.11.09</a></li> 
                        <li><a href="#">빛축제 단체관람 안내		2020.11.09</a></li> 
                     </ul>
     
-                    <ul class="gallery_list">
+                    <ul class="item gallery_list">
                         <li><img src="./images/icon1.jpg" alt="갤러리1"></li>
                         <li><img src="./images/icon2.jpg" alt="갤러리2"></li>
                         <li><img src="./images/icon3.jpg" alt="갤러리3"></li>
                     </ul>
+                </div>
                 </div>
 
                 <div class="banner">
@@ -106,10 +107,11 @@
         <div class="modal">
             <h3>해변에서 펼쳐지는 노래공연</h3>
             <p>빛축제의 모든 공연과 전시정보를 한눈에 볼 수 있습니다. 빛축제 관련 공연과 캘린더 배포, 자전거 투어 행사, 바다 야경 명소, 빛나는 해변의 다리 등 자연환경을 살린 아름다운 해변에서의 빛축제 정보를 안내해드립니다.</p>
-            <button>닫기</button>
+            <button id="closeModal">닫기</button>
         </div>
     
         <script>
+            //메뉴
             var gnb = $('.gnb > li')
             
             gnb.hover(
@@ -121,6 +123,7 @@
                 },
             )
 
+            //슬라이드
              var slide = $('.slide')
              var current = 0
              slide.eq(current).show()
@@ -132,6 +135,28 @@
                 slide.eq(next).fadeIn()
                 current = next
              },3000)
+
+             //탭
+            $('.item').eq(0).show()
+
+            $('.title h3').click(function(){            
+             var idx =  $(this).index()
+    
+            $('.title h3').removeClass('active')
+            $(this).addClass('active')
+
+            $('.item').hide()
+            $('.item').eq(idx).show()       
+})
+
+            //modal
+            $('#showModal').click(function(){
+            $('.modal').show()
+            })
+        
+            $('#closeModal').click(function(){
+            $('.modal').hide()
+            })   
 
         </script>
 
