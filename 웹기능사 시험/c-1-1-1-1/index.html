@@ -72,7 +72,7 @@
                     </div>
                     <div class="items">
                     <ul class="item notice_list">
-                       <li><a href="#">해변에서 펼쳐지는 노래공연	2020.11.09</a></li> 
+                       <li><a href="#" id="showModal">해변에서 펼쳐지는 노래공연	2020.11.09</a></li> 
                        <li><a href="#">바다의 야경과 빛공연 관람하기	2020.11.09</a></li> 
                        <li><a href="#">불꽃놀이 이벤트를 신청하세요	2020.11.09</a></li> 
                        <li><a href="#">빛축제 단체관람 안내		2020.11.09</a></li> 
@@ -147,15 +147,15 @@
 
             $('.item').hide()
             $('.item').eq(idx).show()       
-})
-
-            //modal
-            $('#showModal').click(function(){
-            $('.modal').show()
             })
+
+            //모달
+            $('#showModal').click(function(){
+                $('.modal').show()
+            }),
         
             $('#closeModal').click(function(){
-            $('.modal').hide()
+                $('.modal').hide()
             })   
 
         </script>

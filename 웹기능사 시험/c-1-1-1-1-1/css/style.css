@@ -16,10 +16,10 @@ a {
 }
 
 body {
-    color: #333333;
     background-color: #ffffff;
-    font-weight: normal;
+    color: #333333;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .wrap {
@@ -27,39 +27,39 @@ body {
     display: flex;
 }
 
-.logo img {
-    display: block;
+
+
+/* .leftmain */
+.leftmain .logo img{
     width: 200px;
     height: 40px;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 
 
-/* .gnb  */
+/* .gnb */
 .gnb ul {
     display: none;
-    
 }
 .gnb ul li a {
     display: block;
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
-.gnb ul li a:hover  {
+.gnb ul li a:hover {
     background-color: #ddd;
     color: #ffffff;
 }
 
-
 .gnb > li > a {
     display: block;
     text-align: center;
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
     border-bottom: 1px solid #333333;
 }
 
@@ -72,8 +72,8 @@ body {
 .slider {
     position: relative;
     height: 350px;
-}
 
+}
 
 .slide {
     position: absolute;
@@ -81,69 +81,65 @@ body {
     left: 0;
 }
 
+
 /* .contents */
 .contents {
     display: flex;
-    gap: 4px;
     margin: 10px 0;
-}
-
-.contents div {
-    width: 264px;
-}
-
-.banner img, .link img {
-    display: block;
-    width: 264px;
-    height: 200px;
-    object-fit: cover;
-}
-
-
-.notice_list {
-    padding: 10px;
-}
-
-.notice_list li {
-    padding: 4px 0;
-    font-size: 12px;
-}
-
-
-.gallery_list {
-    display: none;
-    
-}
-
-.gallery_list li {
-    /* display: inline-block; */
-    padding: 2px;
-}
-
-.gallery_list img {
-    width: 80px;
+    gap: 4px;
 }
 
 .title {
     display: flex;
     gap: 4px;
-    border-bottom: 3px solid #333333;
+    width: 264px;
+    border-bottom:2px solid #333333;
 }
 
 .title h3 {
-    width: 264px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #333333;
+    width: 130px;
     color: #ffffff;
+    height: 50px;
+    background-color: #333333;
+    line-height: 50px;
     text-align: center;
     font-size: 12px;
+    font-weight: normal;
     cursor: pointer;
 }
 
 .title h3.active {
-    background-color: #F6B62C;
+    background-color: #ddd;
     color: #333333;
+}
+
+.notice_list {
+    padding: 20px 10px;
+}
+
+.notice_list li {
+    font-size: 12px;
+    padding: 4px;
+}
+
+.banner img, .link img {
+    width: 264px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery_list {
+    display: none;
+}
+
+.gallery_list li {
+    display: inline-block;
+    /* 제이쿼리를 하게 되면 자동으로 블록으로 됨,
+    inline-block을 하게 되면 옆으로 이미지들이 붙을 수 있게 된다. */
+}
+
+.gallery_list img {
+    width: 80px;
 }
 
 .item {
@@ -152,26 +148,30 @@ body {
 
 .footer {
     display: flex;
-    align-items: center; /* (플렉스일때만 사용이 가능함) */
+    align-items: center;
     height: 100px;
-    background-color: #F6B62C;
+    width: 800px;
+    background-color: #ddd;
 }
 
-.footer .f_logo img {
-    width: 180px;
+.f_logo img {
+    width: 200px;
+    height: 40px;
+
 }
 
 .copyright {
-    
+    width: 800px;
+    margin-top: 80px;
 }
 
-
+/* .modal  */
 .modal {
-    background-color: #fff;
-    border: 1px solid #333333;
-    width: 500px;
-    height: 300px;
+    background-color: #ffffff;
     padding: 20px;
+    border: 1px solid #333333;
+    width: 400px;
+    height: 300px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -181,20 +181,21 @@ body {
 
 .modal h3 {
     text-align: center;
-    margin: 10px 0;
 }
 
 .modal p {
+    margin: 10px 0;
     text-align: center;
     line-height: 1.6;
 }
+
 
 .modal button {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    padding: 6px 10px;
 }
+
 
 
 
