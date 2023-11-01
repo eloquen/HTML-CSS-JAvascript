@@ -75,6 +75,25 @@ body {
 }
 
 
+/* .main */
+.main {
+    width: 800px;
+}
+
+.slider {
+    position: relative;
+    height: 350px;
+}
+
+.slide {
+    position: absolute;
+    /* height: 350px; */
+    top: 0;
+    left: 0;
+}
+
+
+
 
 
 
