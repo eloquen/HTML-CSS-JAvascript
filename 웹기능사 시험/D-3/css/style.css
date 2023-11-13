@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+.gnb {
+    padding: 10px;
+}
+
+.gnb > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.gnb > li:hover > a {
+    background-color: #333;
+    color: #fff;    
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 200px);
+    background-color: #ddd;
+    display: none;   
+}
+
+.gnb ul li {
+    display: inline-block;
+}
+
+.gnb ul a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    width: 130px;
+    
+}
+.gnb ul a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.right {
+    width: calc(100% - 200px);
+    background-color: #eee;
+    
+}
+
+/* footer */
+.footer {
+    display: flex;
+   
+}
+
+.footer .right {
+    width: calc(100% - 200px);
+    background-color: #eee;
+}
+
+.test {
+    text-align: center;
+}
+.test h4 {
+    position: relative;
+}
+
+/* .test h4::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    만약에 글자 대신 다른걸 넣고 싶다고
+    한다면 content: ''; 이렇게 적고 
+    칸을 비워두고 아래처럼 이렇게 쓴다.
+    그리고 여기에 
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    이까지 쓰면 백그라운드가 보이지 
+    않기 때문에 position을 써주고
+    position: absolute; 이렇게 
+    적어줘야 하는데 위처럼 적을 경우
+    before가 자식이 되고,h4가 부모가
+    되기 때문에 .test h4에 position: relative;를
+    적어준다. 
+
+
+
+}
+
+.test h4::after {
+    content: 'bbb';
+} */
+
+/* ::before /::after 는
+글자를 두고 앞뒤로 무언가를
+적을 때 써주는 코드인데, 
+아래에 이거를 적어줘야 한다
+content: ''; */
+
+
+/* 블록과 인라인 블록.
+블록은 한칸을 다 적는것이고
+인라인 블록은 옆으로 붙는것이다.
+제이쿼리로 입혀주면 블록형태가 되기
+때문에 블록디자인을 해줘야 한다. */
+
+
+

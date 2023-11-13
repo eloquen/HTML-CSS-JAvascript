@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;    
+}
+
+.right {
+    width: calc(100% - 200px);
+}
+
+.logo {
+    margin: 10px;
+}
+
+.gnb > li > a {
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #333333;
+}
+
+.gnb > li > a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.gnb > li {
+    /* display: none; */
+    position: relative;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    height: 60px;
+    line-height: 60px;
+    width: calc(100vw - 200px);
+    background-color: #ddd;
+}
+
+.gnb ul li {
+    display: inline-block;
+}
+
+/* //인라인블록하고 포지션부분 이해를 하기 */
+
+.gnb ul li a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+
+

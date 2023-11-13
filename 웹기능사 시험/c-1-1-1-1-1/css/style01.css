@@ -29,7 +29,6 @@ body {
 
 /* .side */
 .side {
-    width: 200px;
 }
 
 .logo img {
@@ -76,21 +75,78 @@ body {
 
 
 /* .main */
-.main {
-    width: 800px;
-}
-
-.slider {
+.silder {
     position: relative;
     height: 350px;
 }
 
 .slide {
     position: absolute;
-    /* height: 350px; */
     top: 0;
     left: 0;
 }
+
+/* .contents */
+.contents {
+    display: flex;
+    gap: 4px;
+    margin: 10px 0;
+}
+
+.contents > div {
+    width: 264px;
+}
+
+.tap .title {
+    display: flex;
+    width: 264px;
+    gap: 4px;
+    border-bottom: 3px solid #333333;
+}
+
+.tap .title h3 {
+    background-color: #333333;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.tap .title h3:hover {
+    background-color: #ddd;
+    color: #ffffff;
+}  
+
+.notice_list {
+    padding: 10px;
+}
+.notice_list li {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.gellary_list {
+    display: flex;
+    gap: 4px;
+}
+
+.gellary_list img {
+    width: 80px;
+}
+
+.banner img, .link img {
+    width: 264px;
+    height: 200px;
+}
+
+.items {
+    display: none;
+}
+
+
 
 
 

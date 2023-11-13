@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .gnb */
+
+
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.gnb > li:hover > a {
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.gnb ul {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 1;
+    background-color: #ddd;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+ /* 왜 여기에 높이 값을 주면 상단 부분에만 
+ 먹히는건지 높이값을 안주면 전체 높이가 되는데..
+ 값을 주면 상단 부분만 먹히게 된다.
+ height를 준 값을 40px을 줬으니까 40px만 나온것
+
+ 그리고 li 값을 따로 주지 않는데 
+ 값이 설정이 되어 있는데 왜그런건지..
+ line height 가 설정이 되어 있어서 그런것
+
+ 그리고 보통은 .gnb ul li a 이부분에 준다.
+  */
+
+.gnb ul li:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.gnb ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;    
+}
+
+
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contents {
+    display: flex;
+    gap: 24px;   
+    height: 200px;
+    margin: 10px 0;
+}
+
+.contents > div {
+    flex: 1;
+}
+
+.titles {
+    width: 384px;
+}
+
+.titles .tap {
+    display: flex;
+    gap: 4px;
+    border-bottom: 4px solid #333333;
+}
+
+.titles .tap h3 {
+    background-color: #ddd;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+
+.titles .tap h3.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.board_list {
+    padding: 15px;
+}
+
+.board_list li a {
+    display: block;
+    line-height: 2;
+}
+
+.item {
+    display: none;
+}
+
+.grallery_list {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.grallery_list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.grallery_list li:last-child {
+    margin-right: 0;
+}
+
+.grallery_list img {
+  width: 110px;
+}
+
+.banner img, .link img {
+    width: 384px;
+    height: 200px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.gnb2 {
+    display: flex;
+    gap: 4px;
+    text-align: center;
+}
+
+.modal {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #333333;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.modal h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+
+
+
+
+

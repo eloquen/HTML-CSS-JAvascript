@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.wrap {
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;
+}
+
+.right {
+    width: calc(100% - 200px);
+}
+
+.logo img {
+    margin: 10px 0;
+}
+
+/* .gnb */
+
+.gnb {
+    padding: 10px;
+}
+
+.gnb > li {
+    position: relative;
+    z-index: 1;
+}
+
+.gnb > li > a {
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #333333;
+}
+
+
+.gnb > li:hover > a {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.gnb ul {
+    position: absolute;
+    background-color: #ddd;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 200px);
+}
+
+.gnb ul li {
+    /* display: none; */
+    display: inline-block;
+}
+
+.gnb ul li a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.gnb ul li:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.slider {
+    position: relative;
+    height: 400px;    
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background-color: red;
+}
+
+.slide img {
+    display: block;    
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+
+/* // 이부분 물어보기 */
+.top_banner {
+    position: absolute;
+    top: 0;
+    right:0;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.top_banner img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.right {
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    padding: 50px;
+    width: calc(100% -200px);
+    height: 200px;
+    align-items: center;
+}
+
+.banner .titles {
+    padding: 20px;
+}
+
+.thumb img {
+    width: 100px;
+    height: 100px;
+}
+
+.tab {
+    height: 250px;
+}
+
+.titles_list {
+    margin: 10px 0; 
+    display: flex;
+    gap: 4px;
+    width: 200px;
+    border-bottom: 2px solid #333333;
+}
+
+.titles_list h2 {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.titles_list h2:hover {
+    background-color: #ddd;
+    color: #333333;
+}
+
+.gallary_list {
+    gap: 10px;
+    display: none;
+}
+
+.gallary_list li {
+    display: inline-block;
+}
+
+.footer {
+    display: flex;
+}
+
+/* .footer .left {
+    width: 200px;
+    height: 120px;
+} */
+
+.f_logo img {
+    width: 200px;
+    height: 40px;
+}
+
+.footer_menu {
+    display: flex;
+    margin: 0 10px;
+}
+
+.footer_menu li {
+    padding: 0 10px;
+}
+
+.copyright {
+    margin: 0 10px;
+}
+
+.copyright p {
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+

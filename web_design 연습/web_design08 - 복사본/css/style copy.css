@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #222;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* .header  */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+
+.gallery_list {
+    display: none;
+}
+
+
+/* .gnb  */
+.gnb {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 0 60px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gnb > li > a:hover {
+    color: orangered;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 16px 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+/* .slider */
+.slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide img {
+    width: 1200px;
+}
+
+
+/* .contents */
+.contents{
+    display: flex;
+    gap: 24px;
+    padding: 10px 0;    
+}
+
+.contents > div {
+    flex: 1;
+    /* width: 384px; */
+}
+
+.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+    cursor: pointer;
+}
+
+.board .titles h2 {
+    height: 51px;
+    line-height: 51px;
+    background-color: #ff6347;
+    width: 190px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.notice_list {
+    padding: 10px 6px;
+}
+
+.notice_list li a {
+    display: block;
+    padding: 4px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 364px;
+}
+
+.notice_list li a:hover {
+    text-decoration: underline;
+}
+
+
+.board .titles h2:last-child {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.link ul {
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.link li a {
+    display: block;
+    width: 184px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+
+/* .footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #eeeeee;
+    height: 100px;
+}
+
+
+/* .popup */
+.popup {
+    width: 500px;
+    height: 360px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 중앙으로 오는것은 
+css는 
+아래로 가면 플러스 위로 가면 마이너스라고 보면됨
+처음중심축이 왼쪽 상단을 0으로 잡고 시작을 하고,
+팝업창 사각형도 왼쪽 상단을 중심으로 잡고 움직인다.
+그렇기 때문에 top: 50%;은 팝업창 사각형 왼쪽상단을 중심으로 잡고 
+아래로 50%,  left: 50%;은 오른쪽으로 50%하면 되는데 
+transform: translate(-50%, -50%);는 top: 50%; 팝업창 상단을 
+-50% , 그러니까 위로 50%,-50%는 아래로 50%를 해서 중앙으로 오게한다. */
+
+
+.popup p {
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.popup button {
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+
+
+

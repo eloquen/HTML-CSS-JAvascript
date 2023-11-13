@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;
+}
+
+.right {
+    width: calc(100% - 200px);
+}
+
+.logo  img {
+    width: 200px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+/* .gnb */
+
+
+.gnb  > li > a {
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #333;
+}
+
+.gnb  > li:hover > a {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb ul {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: #ddd;
+    width: calc(100vw - 200px);
+    height: 60px;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.gnb ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.gnb ul li:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.spot_menu {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.slides {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 
+이미지의 크기를 전체의 크기로 조절할려면 어떻게 해야하는가?
+이미지에 직접적으로 코드를 넣어줘야하는데..
+이미지 태그는 부모의 크기에 영향을 주기 때문에 
+부모에 크기를 지정해주고, 밑에 퍼센트로 해줘야하는건지. */
+
+.slider {
+    position: relative;
+}
+
+.top_banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+}
+.top_banner  img{
+    width: 80px;
+}
+
+/* 이미지를 제어를 할려면 어떤 방법들이 있는건지? */
+
+.banner {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.thumb img {
+    width: 200px;
+    height: 150px;
+}
+
+.titles {
+    padding: 0 10px;
+}
+
+.icons {
+    font-size: 80px;
+}
+
+.tab {
+    margin: 0 10px;
+    height: 250px;
+}
+
+.titles_text {
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+.titles_text h2 {
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.titles_text h2:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.notice_list {
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+.gallary_list img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.gallary_list li {
+    display: inline-block;
+}
+
+.footer {
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.f_logo img {
+    width: 200px;
+    height: 40px;
+}
+
+.right_menu {
+    padding: 0 10px;
+}
+
+.footer_menu {
+    display: flex;
+    padding: 10px 0;
+}

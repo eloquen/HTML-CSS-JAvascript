@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 200px;
+}
+
+.right {
+    width: calc(100% - 200px);
+}
+
+/* .gnb { */
+.gnb {
+    /* display: none; */
+}
+    
+.gnb > li > a {
+    display: block;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #333333;
+}
+
+.gnb > li:hover > a {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.gnb > li {
+    position: relative;
+    z-index: 1;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: calc(100vw - 200px);
+    display: flex;
+    background-color: #ddd;
+    height: 60px;
+    line-height: 60px;
+}
+
+.gnb ul li a {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.gnb ul li:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.spot_menu {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.slides {
+    position: relative;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* // 이부분 포지션 잡는 부분 
+포지션을 잡을 때 바로 위에 부모한테 줘야한다 */
+.slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/* //왜 이미지에 display: block; 이거를 주는지
+인라인 블록을 주게 되면 밑에 하얀부분이 생기기 때문에 
+display: block;을 줘서 없애줘야한다
+ */
+
+.top_banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    height: 400px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.top_banner img {
+    width: 100px;
+    height: 100px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 200px;
+    padding: 0 50px;
+}
+
+.thumb img {
+    height: 150px;   
+}
+
+.icons {
+    font-size: 80px;
+}
+
+.tap {
+    height: 250px;
+}
+
+.titles_text {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    gap: 4px;
+    width: 200px;
+    border-bottom: 3px solid #333333;
+}
+
+.titles_text h2 {
+    width: 100px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.titles_text h2:hover {
+    background-color: #ddd;
+    color: #ffffff;
+}
+
+.notice_list {
+    padding: 10px;
+}
+
+.item.gallary_list {
+    display: none;
+}
+
+.item.gallary_list li {
+    display: inline-block;
+}
+
+.item.gallary_list img {
+    padding: 10px 0;
+    width: 150px;
+    height: 150px;
+}
+/* display: inline-block; 이미지는 이미 아래로 떨어지는 
+속성으로 먹혀 있기 때문에 자식요소에 display: inline-block;를
+줘도 먹히지가 않음 이미 아래로 떨어져 있기 때문에,
+그래서 이것들을 감싸고 있는 li(부모요소에)display: inline-block;를
+줘야 한다 */
+
+.footer {
+    display: flex;
+    width: 120px;
+}
+
+.f_logo img {
+    width: 200px;
+    height: 40px;
+}
+
+.footer_menu {
+    display: flex;
+    gap: 20px;
+}
+
+.right_menu {
+    padding: 0 10px;
+}
+
+.copyright {
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
